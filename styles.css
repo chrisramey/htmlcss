@@ -1,0 +1,154 @@
+/* Import a Google font (Open Sans) to make it available for the font-family property  */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+/*
+ * CSS selectors indicate the elements to which styling should be applied.
+ * Typically consist of a sequence of the following:
+ *
+ * (1) tag names, e.g.
+ *		h1 => selects all <h1>...</h1> elements
+ * (2) classes, using a dot
+ *		.active => selects an element such as <li class="active">...</li>
+ * (3) ids, using the hash sign
+ *		#mainMenu => selects a unique element such as <nav id="mainMenu">...</nav>
+ * (4) states, using the colon
+ *		a:hover => selects <a href="...">...</a> that is being hovered over with the mouse
+ * (5) attributes, using brackets ([name="value"])
+ *		input[type="text"] => selects any <input type="text"> element
+ *
+ *
+ * A sequence of single selectors separated by spaces indicates that nested HTML elements
+ * should be selected and styled. For example:
+ *
+ * (a) #mainMenu ul li.acitve a
+ *		Selects an <a> element that is part of an <li> element with a class of "active", 
+ *		which is part of a <ul> element, which is part of *the* element with an id of 
+ *		"mainMenu". This selector would style the "News" anchor from the following markup:
+ *		<div id="mainMenu">
+ *			<ul>
+ *				<li><a href="#>Home</a></li>
+ *				<li class="active"><a href="#>News</a></li>
+ *				<li><a href="#>About</a></li>
+ *			</ul>
+ *		</div>
+ * (b) .post .meta .author
+ *		Selects an element with a class of "author" that is part of an element with a class
+ *		of "meta", which is part of an element with a class of "post". This selector would style
+ *		the "Ada Lovelace" span from the following markup:;
+ *		<div class="post">
+ *			<div class="meta">
+ *				<span class="publishDate">8 Jun 2015</span>
+ *				<span class="author">Ada Lovelace</span>
+ *			</div>
+ *		</div>
+ */
+
+body {
+	font-family: 'open sans', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	max-width: 967px;
+	margin: 0 auto;
+}
+
+body > h1 { /* > means "direct descendant" */
+	background-color: #000;
+	margin-top: 0;
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.section {
+	margin:20px 0;
+	border: 1px solid #000;
+	border-radius: 6px;
+}
+
+.section > h2 {
+	border-radius: 6px 6px 0 0;
+	background-color: #f75620;
+	font-weight: 300;
+	font-size:28px;
+	color: #fff;
+	margin: 0;
+	padding: 20px;
+}
+
+.section div {
+	padding: 20px;
+}
+
+.section a {
+	text-decoration: none;
+	color:#1CA5D4;
+	padding:0px 3px;
+	border-radius: 4px;
+	margin:0 -2px;
+	-webkit-transition: color 0.3s, background-color 0.3s;
+}
+
+.section a:hover {
+	background-color: #1CA5D4;
+	color: white;
+}
+
+.section a.img:hover{
+	outline: none;
+	background-color: transparent;
+}
+
+.section a.img img {
+	border-radius: 4px;
+	-webkit-transition: box-shadow 0.3s;
+}
+
+.section a.img:hover img {
+	box-shadow: 0 0 8px #1CA5D4;
+}
+
+img.frame {
+	border: 1px solid #ccc;
+	padding: 10px;
+	width: 80px;
+	margin: 8px;
+	box-shadow: 0 0 8px #ccc;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+table {
+	border-collapse: collapse;
+	width: 50%;
+	min-width: 300px;
+}
+
+table tr th {
+	text-align: left;
+	border-bottom: 2px solid #bbb;
+	font-size: 20px;
+}
+
+table tr td {
+	border-bottom: 1px solid #bbb;
+}
+
+table tr:last-child td {
+	border-bottom: none;
+}
+
+table tr th, table tr td {
+	padding: 4px 20px 4px 4px;
+}

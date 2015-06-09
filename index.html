@@ -10,104 +10,126 @@
 	<!-- For bots (e.g. search engines such as Google) -->
 	<meta name="description" content="This website provides an overview of the most commonly used HTML elements.">
 
+	<!-- Icon to be displayed in the browser tab next to the title, also known as the favicon -->
+	<link rel="icon" type="image/png" href="images/html5-icon.png">
+
+	<!-- Instruct the browser to load our CSS file -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
 	<!-- Text to be displayed in the browser's tab -->
     <title>HTML + CSS Overview</title>
 </head>
 
 <body>
-    <h1>HTML Overview</h1>
+	<h1>HTML Overview</h1>
+	<div class="container">
+		<div class="section">
+		    <h2>Headings</h2>
+		    <div>
+			    <h1>Level 1 Heading</h1>
+			    <h2>Level 2 Heading</h2>
+			    <h3>Level 3 Heading</h3>
+			    <h4>Level 4 Heading</h4>
+			    <h5>Level 5 Heading</h5>
+			    <h6>Level 6 Heading</h6>
+		    </div>
+	    </div>
 
-    <h2>Headings</h2>
-    <h1>Level 1 Heading</h1>
-    <h2>Level 2 Heading</h2>
-    <h3>Level 3 Heading</h3>
-    <h4>Level 4 Heading</h4>
-    <h5>Level 5 Heading</h5>
-    <h6>Level 6 Heading</h6>
+	    <div class="section">
+		    <h2>Paragraphs</h2>
+		    <div>
+			    <p>Bacon ipsum dolor amet fugiat excepteur jerky short ribs flank labore tri-tip turkey esse pork loin reprehenderit pig chuck. Filet mignon meatball rump bacon, laborum ball tip pariatur frankfurter veniam turducken ex jerky picanha cupidatat spare ribs. Ad aliqua adipisicing t-bone, ut tongue turducken ullamco eu ex. Sirloin swine cupim ea ground round officia deserunt consectetur. Andouille ground round bresaola proident sirloin kielbasa.</p>
+			    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+			</div>
+		</div>
 
-    <h2>Paragraphs</h2>
-    <p>Bacon ipsum dolor amet fugiat excepteur jerky short ribs flank labore tri-tip turkey esse pork loin reprehenderit pig chuck. Filet mignon meatball rump bacon, laborum ball tip pariatur frankfurter veniam turducken ex jerky picanha cupidatat spare ribs. Ad aliqua adipisicing t-bone, ut tongue turducken ullamco eu ex. Sirloin swine cupim ea ground round officia deserunt consectetur. Andouille ground round bresaola proident sirloin kielbasa.</p>
-    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+		<div class="section">
+		    <h2>Images</h2>
+		    <div>
+		    	<!-- Image in a directory of our website -->
+			    <img class="frame" src="images/facebook-icon.png">
 
+			    <!-- Remote image -->
+			    <img class="frame" src="https://code.org/images/logo.png">
+		    </div>
+	    </div>
 
-    <h2>Images</h2>
-
-    <!-- Image in a directory of our website -->
-    <img src="images/facebook-icon.png">
-
-    <!-- Remote image -->
-    <img src="https://code.org/images/logo.png">
-
-
-    <h2>Anchors (Links)</h2>
-
-    <!-- Text anchor in a paragraph -->
-    <p>Turnip greens <a href="http://www.veggieipsum.com">yarrow ricebean</a> rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
-
-    <!-- Stand-alone text anchor -->
-    <a href="http://www.yahoo.com">http://www.google.com</a>
-    <br>
-    <!-- Image anchor -->
-    <a href="http://en.wikipedia.org/wiki/Cloud_Gate"><img src="images/chicago-bean.jpg"></a>
-
-
-    <h2>Lists</h2>
-
-    <!-- Numbered list -->
-    <h3>Ordered List</h3>
-    <ol>
-        <li>Sushi</li>
-        <li>Burritos</li>
-        <li>Pizza</li>
-    </ol>
-
-    <!-- Bulletted list -->
-    <h3>Unordered List</h3>
-    <ul>
-        <li>Cambodia</li>
-        <li>Nepal</li>
-        <li>Turkey</li>
-    </ul>
-
-
-    <h2>Tables</h2>
-    <table>
-        <tr>
-            <th>Period</th>
-            <th>Course</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>AP<sup>&reg;</sup> Calculus AB</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>US Government</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>AP<sup>&reg;</sup> Lang &amp; Comp</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Lunch</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Intro to Robotics</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Advanced Graphic Design</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>AP<sup>&reg;</sup> Computer Science</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>Advanced Web App Development</td>
-        </tr>
-    </table>
+	    <div class="section">
+		    <h2>Anchors (Links)</h2>
+		    <div>
+			    <!-- Text anchor in a paragraph -->
+			    <p>Turnip greens <a href="http://www.veggieipsum.com">yarrow ricebean</a> rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+				
+			    <!-- Stand-alone text anchor -->
+			    <a href="http://www.yahoo.com">http://www.google.com</a>
+			    <br>
+			    <!-- Image anchor -->
+			    <a class="img" href="http://en.wikipedia.org/wiki/Cloud_Gate"><img src="images/chicago-bean.jpg"></a>
+			</div>
+		</div>
+		<div class="section">
+	    	<h2>Lists</h2>
+	    	<div>
+			    <!-- Numbered list -->
+			    <h3>Ordered List</h3>
+			    <ol>
+			        <li>Sushi</li>
+			        <li>Burritos</li>
+			        <li>Pizza</li>
+			    </ol>
+		    
+			    <!-- Bulletted list -->
+			    <h3>Unordered List</h3>
+			    <ul>
+			        <li>Cambodia</li>
+			        <li>Nepal</li>
+			        <li>Turkey</li>
+			    </ul>
+			</div>
+		</div>
+		<div class="section">
+		    <h2>Tables</h2>
+		    <div>
+			    <table>
+			        <tr>
+			            <th>Period</th>
+			            <th>Course</th>
+			        </tr>
+			        <tr>
+			            <td>1</td>
+			            <td>AP<sup>&reg;</sup> Calculus AB</td>
+			        </tr>
+			        <tr>
+			            <td>2</td>
+			            <td>US Government</td>
+			        </tr>
+			        <tr>
+			            <td>3</td>
+			            <td>AP<sup>&reg;</sup> Lang &amp; Comp</td>
+			        </tr>
+			        <tr>
+			            <td>4</td>
+			            <td>Lunch</td>
+			        </tr>
+			        <tr>
+			            <td>5</td>
+			            <td>Intro to Robotics</td>
+			        </tr>
+			        <tr>
+			            <td>6</td>
+			            <td>Advanced Graphic Design</td>
+			        </tr>
+			        <tr>
+			            <td>7</td>
+			            <td>AP<sup>&reg;</sup> Computer Science</td>
+			        </tr>
+			        <tr>
+			            <td>8</td>
+			            <td>Advanced Web App Development</td>
+			        </tr>
+			    </table>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
